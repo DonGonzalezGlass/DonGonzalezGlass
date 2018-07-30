@@ -15,5 +15,20 @@
   "bugs": {
     "url": "https://github.com/DonGonzalezGlass/DonGonzalezGlass/issues"
   },
-  "homepage": "https://github.com/DonGonzalezGlass/DonGonzalezGlass#readme"
+  "homepage": "https://github.com/DonGonzalezGlass/DonGonzalezGlass#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "pg": "^7.4.3",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.38.0"
+  }
 }
