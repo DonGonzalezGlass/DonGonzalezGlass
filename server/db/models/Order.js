@@ -1,55 +1,55 @@
 const Sequelize = require('sequelize');
-const db = require('../db')
+const db = require('../db');
 
-const Orders = db.define('orders', {
+const Order = db.define('order', {
   date: {
     type: Sequelize.DATE,
-    defaultValue: null
+    defaultValue: null,
   },
   name: {
-    type: Sequelize.STRING
+    type: Sequelize.STRING,
   },
   email: {
     type: Sequelize.STRING,
     allowNull: false,
     validate: {
-      isEmail: true
-    }
+      isEmail: true,
+    },
   },
-  shippingAdress: {
+  shippingAddress: {
     type: Sequelize.STRING,
     allowNull: false,
     validate: {
-      notEmpty: true
-    }
+      notEmpty: true,
+    },
   },
   billingAddress: {
     type: Sequelize.STRING,
     allowNull: false,
     validate: {
-      notEmpty: true
-    }
+      notEmpty: true,
+    },
   },
   subtotal: {
     type: Sequelize.INTEGER,
     validate: {
-      min: 0
-    }
+      min: 0,
+    },
   },
   shippingFee: {
     type: Sequelize.INTEGER,
     validate: {
-      min: 0
-    }
+      min: 0,
+    },
   },
   status: {
     type: Sequelize.ENUM('processing', 'canceled', 'shipped'),
-    defaultValue: 'processing'
-  }
-})
+    defaultValue: 'processing',
+  },
+});
 
-module.exports = Orders
+module.exports = Order;
 
-Orders.prototype.getTotal = function() {
-  return this.subtotal + this.shippingFee
-}
+Order.prototype.getTotal = function() {
+  return this.subtotal + this.shippingFee;
+};

@@ -1,5 +1,3 @@
-const db = require('./db')
+const db = require('./db');
 
-
-
-const syncDb = () => db.sync()
+const syncDb = () => db.sync();
