@@ -1,15 +1,20 @@
-import React from 'react';
+import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+import { withRouter, Route, Switch } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { Home, Navbar } from './components';
 
-import { Navbar } from './components';
-import Main from './main';
+class App extends Component {
+  render() {
+    return (
+      <div>
+        <Navbar />
+        <Switch>
+          <Route path="/home" component={Home} />
+        </Switch>
+      </div>
+    );
+  }
+}
 
-const App = () => {
-  return (
-    <div>
-      <Navbar />
-      <Main />
-    </div>
-  );
-};
-
-export default App;
+export default withRouter(App);
