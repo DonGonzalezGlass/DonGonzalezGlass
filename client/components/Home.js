@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Home = props => {
   return (
@@ -16,7 +16,12 @@ const Home = props => {
       </div>
       <div>
         <h5>Learn the art of glassblowing or glass casting with Don Gonzalez</h5>
+        <Link to='/workshops'><button>Workshops</button></Link>
       </div>
+      {/* <div>
+        <h5>Find the perfect ???</h5>
+        <Link to='/workshops'><button>Workshops</button></Link>
+      </div> */}
     </div>
   );
 }
