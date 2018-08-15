@@ -7,12 +7,12 @@ const Home = props => {
   return (
     <div>
       <picture>
-        <source media='(max-width: 599px)' srcSet='glass-mobile-max-599.png' />
-        <source media='(min-width: 600px)' srcSet='glass-mobile-min-600.png' />
-        <source media='(min-width: 900px)' srcSet='glass-mobile-min-900.png' />
         <source media='(min-width: 1200px)' srcSet='glass-mobile-min-1200.png' />
         <source media='(min-width: 1800px)' srcSet='glass-mobile-min-1800.png' />
-        <img src={'glass-mobile-min-1200.png'} alt='Hand blown glass art mobile by Don Gonzalez' />
+        <source media='(min-width: 900px)' srcSet='glass-mobile-min-900.png' />
+        <source media='(min-width: 600px)' srcSet='glass-mobile-min-600.png' />
+        <source media='(max-width: 599px)' srcSet='glass-mobile-max-599.png' />
+        <img src='glass-mobile-min-1200.png' alt='Hand blown glass art mobile by Don Gonzalez' />
       </picture>
       <div>
         <h4>Contemporary Art Glass designs by Don Gonzalez and his collection of 20th Century Glass</h4>
