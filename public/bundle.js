@@ -192,11 +192,11 @@ var Home = function Home(props) {
     _react2.default.createElement(
       'picture',
       null,
-      _react2.default.createElement('source', { media: '(max-width: 599px)', srcSet: 'glass-mobile-max-599.png' }),
-      _react2.default.createElement('source', { media: '(min-width: 600px)', srcSet: 'glass-mobile-min-600.png' }),
-      _react2.default.createElement('source', { media: '(min-width: 900px)', srcSet: 'glass-mobile-min-900.png' }),
       _react2.default.createElement('source', { media: '(min-width: 1200px)', srcSet: 'glass-mobile-min-1200.png' }),
       _react2.default.createElement('source', { media: '(min-width: 1800px)', srcSet: 'glass-mobile-min-1800.png' }),
+      _react2.default.createElement('source', { media: '(min-width: 900px)', srcSet: 'glass-mobile-min-900.png' }),
+      _react2.default.createElement('source', { media: '(min-width: 600px)', srcSet: 'glass-mobile-min-600.png' }),
+      _react2.default.createElement('source', { media: '(max-width: 599px)', srcSet: 'glass-mobile-max-599.png' }),
       _react2.default.createElement('img', { src: 'glass-mobile-min-1200.png', alt: 'Hand blown glass art mobile by Don Gonzalez' })
     ),
     _react2.default.createElement(
