@@ -144,6 +144,7 @@ var App = function (_Component) {
           _reactRouterDom.Switch,
           null,
           _react2.default.createElement(_reactRouterDom.Route, { path: '/home', component: _components.Home }),
+          _react2.default.createElement(_reactRouterDom.Route, { path: '/workshops', component: _components.Workshops }),
           _react2.default.createElement(_reactRouterDom.Route, { component: _components.Home })
         )
       );
@@ -354,6 +355,99 @@ exports.default = Navbar;
 
 /***/ }),
 
+/***/ "./client/components/Workshops.js":
+/*!****************************************!*\
+  !*** ./client/components/Workshops.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+var _propTypes = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
+var _reactRedux = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
+
+var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+var Workshops = function Workshops(props) {
+  return _react2.default.createElement(
+    'div',
+    { className: 'workshops-container' },
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'h1',
+        null,
+        'GLASS BLOWING and GLASS CASTING WORKSHOPS'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'p',
+        null,
+        'description'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'h2',
+        null,
+        'Glass Blowing'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'p',
+        null,
+        'glass blowing description'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'h2',
+        null,
+        'Glass Casting'
+      )
+    ),
+    _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'p',
+        null,
+        'glass casting description'
+      )
+    )
+  );
+};
+
+exports.default = Workshops;
+
+/***/ }),
+
 /***/ "./client/components/index.js":
 /*!************************************!*\
   !*** ./client/components/index.js ***!
@@ -383,6 +477,15 @@ Object.defineProperty(exports, 'Navbar', {
   enumerable: true,
   get: function get() {
     return _interopRequireDefault(_Navbar).default;
+  }
+});
+
+var _Workshops = __webpack_require__(/*! ./Workshops */ "./client/components/Workshops.js");
+
+Object.defineProperty(exports, 'Workshops', {
+  enumerable: true,
+  get: function get() {
+    return _interopRequireDefault(_Workshops).default;
   }
 });
 
