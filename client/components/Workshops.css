@@ -1,0 +1,18 @@
+.workshops-container {
+  background: #4b4237;
+  padding: 10px;
+}
+
+.title-container {
+  padding: 1em;
+  background: rgba(47,50,60, 0.8);
+  color: #f1ead0;
+  border-radius: 10px;
+  font-family: 'Dosis', sans-serif;
+}
+
+.text-container {
+  padding: 1em;
+  border-radius: 10px;
+  background: #797b53;
+}

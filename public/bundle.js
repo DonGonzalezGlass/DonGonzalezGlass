@@ -355,6 +355,36 @@ exports.default = Navbar;
 
 /***/ }),
 
+/***/ "./client/components/Workshops.css":
+/*!*****************************************!*\
+  !*** ./client/components/Workshops.css ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/postcss-loader/src!./Workshops.css */ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js!./client/components/Workshops.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./client/components/Workshops.js":
 /*!****************************************!*\
   !*** ./client/components/Workshops.js ***!
@@ -381,6 +411,8 @@ var _reactRedux = __webpack_require__(/*! react-redux */ "./node_modules/react-r
 
 var _reactRouterDom = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/es/index.js");
 
+__webpack_require__(/*! ./Workshops.css */ "./client/components/Workshops.css");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Workshops = function Workshops(props) {
@@ -389,16 +421,16 @@ var Workshops = function Workshops(props) {
     { className: 'workshops-container' },
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'title-container' },
       _react2.default.createElement(
         'h1',
-        null,
+        { className: 'page-title title' },
         'GLASS BLOWING and GLASS CASTING WORKSHOPS'
       )
     ),
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'text-container' },
       _react2.default.createElement(
         'p',
         null,
@@ -407,16 +439,16 @@ var Workshops = function Workshops(props) {
     ),
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'title-container' },
       _react2.default.createElement(
         'h2',
-        null,
+        { className: 'title' },
         'Glass Blowing'
       )
     ),
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'text-container' },
       _react2.default.createElement(
         'p',
         null,
@@ -425,16 +457,16 @@ var Workshops = function Workshops(props) {
     ),
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'title-container' },
       _react2.default.createElement(
         'h2',
-        null,
+        { className: 'title' },
         'Glass Casting'
       )
     ),
     _react2.default.createElement(
       'div',
-      null,
+      { className: 'text-container' },
       _react2.default.createElement(
         'p',
         null,
@@ -9014,6 +9046,25 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 // module
 exports.push([module.i, ".home-container {\n  position: relative;\n}\n\nimg {\n  width: 100%;\n  height: auto;\n  position: absolute;\n}\n\n.heading-container {\n  position: absolute;\n  margin: 1em;\n  padding: 2em;\n  background-color: rgba(47,50,60, 0.8);\n  border-radius: 10px;\n  color: #f1ead0;\n  font-family: 'Dosis', sans-serif;\n  font-size: 1.5em;\n}\n\n.intro {\n  top: 160px;\n  left: 3%;\n  max-width: 600px;\n  text-align: center;\n  margin: 1.5em;\n  z-index: 1;\n  line-height: 2;\n}\n\n.action {\n  top: 380px;\n  left: 10%;\n}\n\n.action-row {\n  display: flex;\n  flex-flow: row nowrap;\n  align-items: center;\n  justify-content: space-between;\n}\n.action-btn {\n  padding: 10px;\n  margin: 10px 10px 10px 40px;\n  width: 150px;\n  font-family: 'Open Sans', sans-serif;\n  border-radius: 10px;\n  background-color: #edcb96;\n  font-size: 1em;\n  color: #2f323c;\n  border: none;\n}\n\n\n\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/postcss-loader/src/index.js!./client/components/Workshops.css":
+/*!*****************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src!./client/components/Workshops.css ***!
+  \*****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".workshops-container {\n  background: #4b4237;\n  padding: 10px;\n}\n\n.title-container {\n  padding: 1em;\n  background: rgba(47,50,60, 0.8);\n  color: #f1ead0;\n  border-radius: 10px;\n  font-family: 'Dosis', sans-serif;\n}\n\n.text-container {\n  padding: 1em;\n  border-radius: 10px;\n  background: #797b53;\n}\n", ""]);
 
 // exports
 
